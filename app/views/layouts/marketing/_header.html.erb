@@ -1,0 +1,24 @@
+<header class="p-3 text-bg-dark">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-end justify-content-lg-end">
+      <%= link_to root_path, class: "d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none" do %>
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      <% end %>
+
+      <%# TODO: add advance search with time %>
+      <%#= form_with url: "#", method: :get, class: "col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3", role: "search" do %>
+        <%#= search_field_tag :q, nil,
+          class: "form-control form-control-dark text-bg-dark",
+          placeholder: "Search...",
+          aria: { label: "Search" } %>
+      <%# end %>
+
+      <div class="text-end">
+        <%= button_tag "Login", type: "button", class: "btn btn-outline-light me-2" %>
+        <%= button_tag "Sign-up", type: "button", class: "btn btn-warning" %>
+      </div>
+    </div>
+  </div>
+</header>
